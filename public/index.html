@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Rental Home - Welcome</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#317EFB" />
+
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/about.html">About</a> |
+        <a href="/terms.html">Terms & Conditions</a> |
+        <a href="/contact.html">Contact / Book Now</a>
+    </nav>
+
+    <header>
+        <img src="images/banner.jpg" alt="Rental Home Banner" class="banner" />
+    </header>
+
+    <h1>Welcome to Rental Home Services</h1>
+    <p>Find your perfect home for vacation, business, or family stay!</p>
+
+    <h2>Our Top Rental Homes</h2>
+    <div class="gallery">
+        <img src="images/home1.jpg" alt="Beautiful Home 1" />
+        <img src="images/home2.jpg" alt="Cozy Home 2" />
+        <img src="images/home3.jpg" alt="Luxury Home 3" />
+    </div>
+
+    <h2>Special Offers</h2>
+    <ul>
+        <li>10% off for stays longer than 1 week</li>
+        <li>Free airport pickup for first-time guests</li>
+        <li>Complimentary breakfast included!</li>
+    </ul>
+
+    <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js')
+      .then((reg) => {
+        console.log('Service Worker registered.', reg);
+      })
+      .catch((err) => {
+        console.log('Service Worker registration failed:', err);
+      });
+  }
+</script>
+
+
+</body>
+</html>

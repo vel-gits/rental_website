@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Contact / Book Now - Rental Home</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/about.html">About</a> |
+        <a href="/terms.html">Terms & Conditions</a> |
+        <a href="/contact.html">Contact / Book Now</a>
+    </nav>
+
+    <h1>Book Your Rental Home</h1>
+    <form action="/submit-form" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="tel" name="phone" placeholder="Your Phone Number" required />
+        <textarea name="message" placeholder="Your Message / Special Requests"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
